@@ -66,6 +66,7 @@
 // Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
+    compatible = "zmk,input-listener";
     device = <&trackball_central>;
 
     scroller {
@@ -76,6 +77,7 @@
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
+            <&zip_temp_layer 5 10000>;
     };
 
 };
@@ -90,13 +92,5 @@
             22 // K
             30 // L
         >;
-    };
-    // 既存にtrackball_listenerが定義されてると思うので、`input-processors`を追加します
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        // 下記1は マウスレイヤーです. ご自身の設定されているレイヤーを指定してください. また、10000もAMLに留まる時間になります
-
-        input-processors = <&zip_temp_layer 5 10000>;
     };
 };
