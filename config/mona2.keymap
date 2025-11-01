@@ -107,7 +107,7 @@
 &kp Q             &kp W         &kp E         &kp R    &kp T                                    &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &lt 2 D       &kp F    &kp G                     &kp PAGE_UP    &kp H        &kp J  &kp K      &kp L    &mt LEFT_GUI MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B        &kp ENTER    &kp PAGE_DOWN  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&mt LCTRL ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &kp DEL  &lt 3 SPACE  &lt 1 TAB    &kp BACKSPACE  &lt 3 ENTER                             &mt LEFT_ALT UNDER
+&mt LCTRL ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &kp DEL  &lt 3 SPACE  &lt 1 TAB    &kp BACKSPACE  &lt 3 ENTER                             &mt LEFT_ALT LS(BACKSLASH)
             >;
 
             sensor-bindings = <&scroll_up_down>;
