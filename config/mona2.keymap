@@ -108,7 +108,7 @@
 &trans   &trans  &trans  &trans  &trans  &trans    &kp PERIOD  &kp NUMBER_0                                             &kp SLASH
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_2 {
@@ -130,7 +130,7 @@
 &kp LA(F4)        &trans              &trans              &kp LG(E)      &kp LC(N)                &kp LC(LS(N))          &trans             &trans                                                                  &kp LEFT_BRACKET
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_right_left>;
         };
 
         layer_4 {
