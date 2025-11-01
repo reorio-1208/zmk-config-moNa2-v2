@@ -63,10 +63,10 @@
 };
 
 
+
 // Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
-    compatible = "zmk,input-listener";
     device = <&trackball_central>;
 
     scroller {
@@ -77,20 +77,6 @@
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
-            <&zip_temp_layer 5 10000>;
     };
 
-};
-
-/ {
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        // AMLに戻りたくないキーを指定します. 私の場合`L`と`,`と`.`はマウスボタン、それ以外はLayer0側での装飾キーになります
-        excluded-positions = <
-            20 // J
-            22 // K
-            30 // L
-        >;
-    };
 };
