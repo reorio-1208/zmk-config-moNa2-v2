@@ -48,6 +48,16 @@
             bindings = <&kp LS(CAPSLOCK)>;
             key-positions = <17 19>;
         };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <6 7>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {
@@ -140,7 +150,7 @@
 &kp LA(LEFT)      &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LA(RIGHT)                                           &kp LC(A)         &kp LS(HOME)      &kp UP_ARROW      &kp LS(END)       &kp EQUAL
 &kp LS(LG(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(E)                             &kp SEMICOLON     &kp APOSTROPHE    &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp LS(EQUAL)
 &kp LS(LG(S))     &kp LC(W)           &kp LG(D)           &kp LC(T)      &kp LA(D)      &kp LA(PRINTSCREEN)    &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_6)  &kp LS(NUMBER_5)  &kp LS(NUMBER_1)
-&kp LA(F4)        &trans              &trans              &trans         &kp LC(N)      &kp LC(LS(N))          &trans            &trans                                                                  &kp LEFT_BRACKET
+&kp LA(F4)        &trans              &trans              &trans         &kp LC(N)      &kp LC(LS(N))          &kp LC(NUMBER_1)  &trans                                                                  &kp LEFT_BRACKET
             >;
 
             sensor-bindings = <&scroll_right_left>;
