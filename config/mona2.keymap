@@ -72,11 +72,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LG(X)>,
+                <&kp LG(X) &kp U &kp U &kp U>,
                 <&macro_wait_time 1>,
                 <&kp U>,
                 <&macro_wait_time 1>,
-                <&kp U>;
+                <&kp U>,
+                <&macro_wait_time 1>,
+                <&kp LG(X) &kp U &kp U>;
 
             label = "DOWN";
         };
