@@ -80,31 +80,3 @@
     };
 
 };
-
-// 下記includeされていないと思うので追加します
-#include <input/processors.dtsi>
-
-/ {
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        // AMLに戻りたくないキーを指定します. 私の場合`L`と`,`と`.`はマウスボタン、それ以外はLayer0側での装飾キーになります
-        excluded-positions = <
-            20 // J
-            22 // K
-            30 // L
-            31 // ,
-            32 // .
-            34 // Shift
-            36 // Command
-        >;
-    };
-    // 既存にtrackball_listenerが定義されてると思うので、`input-processors`を追加します
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        // 下記1は マウスレイヤーです. ご自身の設定されているレイヤーを指定してください. また、10000もAMLに留まる時間になります
-
-        input-processors = <&zip_temp_layer 5 10000>;
-    };
-};
