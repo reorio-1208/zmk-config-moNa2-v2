@@ -134,7 +134,7 @@
             bindings = <
 &kp F12  &kp F7  &kp F8  &kp F9  &trans                    &kp LS(SQT)   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)
 &kp F11  &kp F4  &kp F5  &kp F6  &trans            &trans  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans    &trans  &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
+&kp F10  &kp F1  &kp F2  &kp F3  &trans  &down     &trans  &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
 &trans   &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_0                                            &kp LS(MINUS)
             >;
 
