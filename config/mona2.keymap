@@ -58,6 +58,11 @@
             bindings = <&kp END>;
             key-positions = <7 8>;
         };
+
+        esc {
+            bindings = <&kp LC(LS(ESCAPE))>;
+            key-positions = <1 2 3>;
+        };
     };
 
     macros {
