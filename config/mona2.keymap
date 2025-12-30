@@ -84,12 +84,12 @@
             key-positions = <17 18>;
         };
 
-        L_CLIKC {
+        L_click {
             bindings = <&mkp MB2>;
             key-positions = <18 19>;
         };
 
-        C_CLICK {
+        C_clicl {
             bindings = <&mkp MB3>;
             key-positions = <17 19>;
         };
