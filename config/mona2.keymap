@@ -36,17 +36,17 @@
 
         jp {
             bindings = <&kp LANG1>;
-            key-positions = <29 29 30>;
+            key-positions = <22 23>;
         };
 
         US {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <30 30 31>;
+            key-positions = <23 24>;
         };
 
         CAP {
             bindings = <&kp LS(CAPSLOCK)>;
-            key-positions = <31 29>;
+            key-positions = <24 22>;
         };
 
         home {
@@ -173,10 +173,10 @@
 
         layer_2 {
             bindings = <
-&kp LC(KP_PLUS)  &kp LS(F10)    &kp UP_ARROW  &kp F2       &kp LC(R)                    &kp LC(A)  &kp LS(HOME)  &kp LS(END)  &trans  &trans
-&kp LC(U)        &kp LEFT       &kp DOWN      &kp RIGHT    &kp LC(Q)            &trans  &mkp MB3   &mkp MB1      &mkp MB2     &trans  &trans
-&trans           &kp PAGE_DOWN  &trans        &kp PAGE_UP  &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &trans
-&trans           &trans         &trans        &trans       &trans     &trans    &trans  &trans                                        &trans
+&kp LC(KP_PLUS)  &kp LS(F10)  &kp UP_ARROW  &kp F2     &kp LC(R)                    &kp LC(A)     &kp LS(HOME)  &kp LS(END)  &trans  &trans
+&kp LC(U)        &kp LEFT     &kp DOWN      &kp RIGHT  &kp LC(Q)            &trans  &kp UP_ARROW  &mkp MB1      &mkp MB2     &trans  &trans
+&trans           &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &kp DOWN      &trans        &trans       &trans  &trans
+&trans           &trans       &trans        &trans     &trans     &trans    &trans  &trans                                           &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
