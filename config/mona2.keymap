@@ -79,7 +79,7 @@
             key-positions = <2 3>;
         };
 
-        R_CLIKC {
+        r_click {
             bindings = <&mkp MB1>;
             key-positions = <17 18>;
         };
