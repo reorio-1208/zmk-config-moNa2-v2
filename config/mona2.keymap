@@ -34,7 +34,7 @@
             key-positions = <11 12>;
         };
 
-        JP {
+        jp {
             bindings = <&kp LANG1>;
             key-positions = <29 29 30>;
         };
@@ -79,17 +79,17 @@
             key-positions = <2 3>;
         };
 
-        r_click {
+        rm {
             bindings = <&mkp MB1>;
             key-positions = <17 18>;
         };
 
-        L_click {
+        lm {
             bindings = <&mkp MB2>;
             key-positions = <18 19>;
         };
 
-        C_clicl {
+        cm {
             bindings = <&mkp MB3>;
             key-positions = <17 19>;
         };
