@@ -82,31 +82,15 @@
             key-positions = <2 1>;
         };
 
-        rm {
-            bindings = <&mkp MB1>;
-            key-positions = <17 18>;
-        };
-
-        lm {
-            bindings = <&mkp MB2>;
-            key-positions = <18 19>;
-        };
-
         cm {
             bindings = <&mkp MB3>;
             key-positions = <17 19>;
-            layers = <2>;
-        };
-
-        win_tab {
-            bindings = <&win_tab>;
-            key-positions = <12 13>;
-            layers = <2>;
         };
 
         alt_tab {
             bindings = <&alt_tab>;
             key-positions = <18 17>;
+            layers = <2>;
         };
     };
 
@@ -209,11 +193,11 @@
             bindings = <
 &kp LC(KP_PLUS)  &kp LS(F10)  &kp UP_ARROW  &kp F2     &kp LC(R)                    &kp LC(A)  &kp LS(HOME)  &kp LS(END)  &trans  &trans
 &kp LC(U)        &kp LEFT     &kp DOWN      &kp RIGHT  &kp LC(Q)            &trans  &win_tab   &mkp MB1      &mkp MB2     &trans  &trans
-&trans           &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &win_tab
-&trans           &trans       &trans        &trans     &trans     &trans    &trans  &trans                                        &trans
+&win_tab         &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &win_tab
+&alt_tab         &trans       &trans        &trans     &trans     &trans    &trans  &trans                                        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+            sensor-bindings = <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>;
         };
 
         layer_3 {
