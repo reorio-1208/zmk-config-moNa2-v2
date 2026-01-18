@@ -36,17 +36,20 @@
 
         jp {
             bindings = <&kp LANG1>;
-            key-positions = <22 23>;
+            key-positions = <17 18>;
+            layers = <3>;
         };
 
         US {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <23 24>;
+            key-positions = <18 19>;
+            layers = <3>;
         };
 
         CAP {
             bindings = <&kp LS(CAPSLOCK)>;
-            key-positions = <24 22>;
+            key-positions = <17 19>;
+            layers = <3>;
         };
 
         home {
@@ -153,7 +156,7 @@
             bindings = <
 &kp Q                  &kp W         &kp E         &kp R      &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A                  &kp S         &lt 2 D       &lt 2 F    &kp G                     &kp LC(NUMBER_1)  &kp H        &kp J  &kp K      &lt 2 L  &mt LEFT_GUI MINUS
-&mt LCTRL Z            &kp X         &kp C         &kp V      &kp B        &kp LC(Q)    &kp LC(F2)        &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_ALT SLASH
+&mt LCTRL Z            &kp X         &kp C         &kp V      &kp B        &kp LC(Q)    &kp LC(F2)        &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &mt LEFT_SHIFT ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 DEL  &lt 3 SPACE  &lt 1 TAB    &kp BACKSPACE     &lt 3 ENTER                             &mt LEFT_SHIFT LS(INT1)
             >;
 
