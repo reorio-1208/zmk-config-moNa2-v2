@@ -195,8 +195,8 @@
             bindings = <
 &kp LC(KP_PLUS)  &kp LS(F10)  &kp UP_ARROW  &kp F2     &kp LC(R)                    &kp LC(A)  &kp LS(HOME)  &kp LS(END)  &trans  &trans
 &kp LC(U)        &kp LEFT     &kp DOWN      &kp RIGHT  &kp LC(Q)            &trans  &kp F2     &mkp MB1      &mkp MB2     &trans  &trans
-&win_tab         &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &trans
-&win_tab         &trans       &trans        &trans     &trans     &trans    &trans  &trans                                        &trans
+&trans           &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &trans
+&trans           &trans       &trans        &trans     &trans     &trans    &trans  &trans                                        &win_tab
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>;
