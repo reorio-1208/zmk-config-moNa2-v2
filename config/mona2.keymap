@@ -129,8 +129,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT &kp TAB>,
+                <&kp LEFT_ALT>,
                 <&macro_pause_for_release>,
+                <&kp TAB>,
+                <&macro_press>,
                 <&mkp LCLK>;
 
             label = "ALT_TAB";
@@ -192,9 +194,9 @@
         layer_2 {
             bindings = <
 &kp LC(KP_PLUS)  &kp LS(F10)  &kp UP_ARROW  &kp F2     &kp LC(R)                    &kp LC(A)  &kp LS(HOME)  &kp LS(END)  &trans  &trans
-&kp LC(U)        &kp LEFT     &kp DOWN      &kp RIGHT  &kp LC(Q)            &trans  &win_tab   &mkp MB1      &mkp MB2     &trans  &trans
-&win_tab         &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &win_tab
-&alt_tab         &trans       &trans        &trans     &trans     &trans    &trans  &trans                                        &trans
+&kp LC(U)        &kp LEFT     &kp DOWN      &kp RIGHT  &kp LC(Q)            &trans  &kp F2     &mkp MB1      &mkp MB2     &trans  &trans
+&win_tab         &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &trans
+&win_tab         &trans       &trans        &trans     &trans     &trans    &trans  &trans                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>;
