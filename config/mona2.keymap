@@ -134,7 +134,9 @@
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_pause_for_release>,
-                <&mkp LCLK>;
+                <&mkp LCLK>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "ALT_TAB";
         };
