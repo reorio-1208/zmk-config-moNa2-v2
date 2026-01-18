@@ -95,12 +95,18 @@
         cm {
             bindings = <&mkp MB3>;
             key-positions = <17 19>;
+            layers = <2>;
+        };
+
+        win_tab {
+            bindings = <&win_tab>;
+            key-positions = <12 13>;
+            layers = <2>;
         };
 
         alt_tab {
-            bindings = <&none>;
+            bindings = <&alt_tab>;
             key-positions = <18 17>;
-            layers = <2>;
         };
     };
 
@@ -138,7 +144,10 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(TAB)>, <&macro_pause_for_release>, <&mkp LCLK>;
+            bindings =
+                <&kp LEFT_ALT &kp TAB>,
+                <&macro_pause_for_release>,
+                <&mkp LCLK>;
 
             label = "ALT_TAB";
         };
@@ -200,11 +209,11 @@
             bindings = <
 &kp LC(KP_PLUS)  &kp LS(F10)  &kp UP_ARROW  &kp F2     &kp LC(R)                    &kp LC(A)  &kp LS(HOME)  &kp LS(END)  &trans  &trans
 &kp LC(U)        &kp LEFT     &kp DOWN      &kp RIGHT  &kp LC(Q)            &trans  &win_tab   &mkp MB1      &mkp MB2     &trans  &trans
-&trans           &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &trans
+&trans           &trans       &trans        &trans     &kp LC(F)  &trans    &trans  &trans     &trans        &trans       &trans  &win_tab
 &trans           &trans       &trans        &trans     &trans     &trans    &trans  &trans                                        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LG(RIGHT)) LS(LG(LEFT))>;
+            sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
 
         layer_3 {
